@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bbc-world",
+    "publisher": "BBC News",
+    "independenceGroup": "bbc",
+    "feedUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "reuseReviewed": false,
+    "enabled": false
+  },
+  {
+    "id": "npr-world",
+    "publisher": "NPR",
+    "independenceGroup": "npr",
+    "feedUrl": "https://feeds.npr.org/1004/rss.xml",
+    "reuseReviewed": false,
+    "enabled": false
+  },
+  {
+    "id": "un-news",
+    "publisher": "UN News",
+    "independenceGroup": "un",
+    "feedUrl": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+    "reuseReviewed": false,
+    "enabled": false
+  }
+]
