@@ -568,6 +568,7 @@ async function handleAuth(request, response, pathname) {
         return true;
     }
 
+    // server.js initializes schema.sql; these auth routes persist profiles and sessions in that database.
     if (pathname === "/api/community/register") {
         const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
         const displayName = typeof body.displayName === "string" ? body.displayName.trim() : "";

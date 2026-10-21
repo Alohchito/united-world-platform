@@ -100,7 +100,13 @@ const staticFiles = {
     "/": ["index.html", "text/html; charset=utf-8"],
     "/index.html": ["index.html", "text/html; charset=utf-8"],
     "/style.css": ["style.css", "text/css; charset=utf-8"],
-    "/script.js": ["script.js", "text/javascript; charset=utf-8"]
+    "/script.js": ["script.js", "text/javascript; charset=utf-8"],
+    "/community-experience.js": ["community-experience.js", "text/javascript; charset=utf-8"],
+    "/aetherium.html": ["aetherium.html", "text/html; charset=utf-8"],
+    "/chat-software.html": ["chat-software.html", "text/html; charset=utf-8"],
+    "/christ-mindset.html": ["christ-mindset.html", "text/html; charset=utf-8"],
+    "/sow-natural.html": ["sow-natural.html", "text/html; charset=utf-8"],
+    "/enoch-hall.html": ["enoch-hall.html", "text/html; charset=utf-8"]
 };
 
 const cache = new Map();

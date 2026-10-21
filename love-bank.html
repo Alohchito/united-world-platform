@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A fictional browser-only Love Credits learning simulation."><meta name="theme-color" content="#24352d"><title>Love Bank Demo ? United World</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html" aria-label="United World home"><span class="brand-mark" aria-hidden="true">U</span><span>United <span class="brand-accent">World</span></span></a><nav class="main-navigation" aria-label="Main navigation"><ul class="nav-list">
+<li><a href="index.html">Home</a></li>
+<li class="nav-group"><a href="metaphysical.html">Wisdom &amp; Traditions</a><ul class="nav-dropdown"><li><a href="metaphysical.html">Metaphysical &amp; Theological Sciences</a></li><li><a href="philosophical.html">Philosophical Foundations</a></li></ul></li>
+<li class="nav-group"><a href="engineering.html">Governed Technology</a><ul class="nav-dropdown"><li><a href="artist.html">Artist Innate Godhand Work</a></li><li><a href="engineering.html">Engineering Video Engine</a></li><li><a href="translation.html">Universal Translation</a></li></ul></li>
+<li class="nav-group"><a href="signup.html">Love Bank Account</a><ul class="nav-dropdown"><li><a href="signup.html">Sign In / Sign Up</a></li><li><a href="rewards.html">User Rewards &amp; Activity Dashboard</a></li><li><a href="impact-fund.html">2% Eternal Impact Fund Widget</a></li><li><a href="love-bank.html">Love Bank Demo</a></li></ul></li>
+<li><a href="news.html">News Hub</a></li><li><a href="work-jobs.html">Work &amp; Jobs</a></li><li><a href="privacy.html">Privacy &amp; Ads</a></li></ul></nav></header><main id="main"><p class="page-home-action"><a class="button button-primary" href="index.html">Return Home</a></p><section class="love-bank-section" id="love-bank" aria-labelledby="love-bank-title">
+            <div class="section-heading">
+                <p class="eyebrow">A private, fictional learning activity</p>
+                <h2 id="love-bank-title">United World Love Bank</h2>
+                <p>
+                    Practice generosity, budgeting, and simple interest with fictional
+                    Love Credits. This is not a bank or financial product. Accounts live
+                    only in this browser and can be erased by clearing this browser's site data.
+                </p>
+            </div>
+
+            <aside class="love-bank-notice" aria-label="Simulation only notice">
+                <strong>Simulation only — no money or identity checks.</strong>
+                Love Credits have no cash value, cannot be purchased, withdrawn,
+                redeemed, or transferred to a real person or financial institution.
+                Transfers work only between fictional demo profiles stored in this
+                browser. Never enter your legal name, date of birth, email, government
+                ID, bank details, or other sensitive personal information.
+            </aside>
+
+            <form id="love-account-form" class="love-bank-form">
+                <h3>Open a free demo account</h3>
+                <p>Choose a fictional username. Your starting balance is 0 Love Credits.</p>
+                <label for="love-username">Demo username</label>
+                <input id="love-username" name="username" maxlength="24" pattern="[A-Za-z0-9_-]{3,24}" autocomplete="off" required placeholder="For example: KindLearner7">
+                <small>Use 3–24 letters, numbers, underscores, or hyphens. Do not use your real name.</small>
+                <label for="love-country">Country or region (optional)</label>
+                <input id="love-country" name="country" maxlength="60" autocomplete="off" placeholder="Optional; saved only in this browser">
+                <label for="love-home-currency">Select home currency</label>
+                <select id="love-home-currency" name="homeCurrency" required>
+                    <option value="USD">US Dollar (USD)</option>
+                </select>
+                <label class="love-consent-label">
+                    <input id="love-demo-consent" name="demoConsent" type="checkbox" required>
+                    I understand this is a fictional, browser-only educational simulation with no real money or bank services.
+                </label>
+                <button class="button button-primary" type="submit">Open free demo account · 0 credits</button>
+                <button class="button button-outline" id="love-reset-corrupt" type="button" hidden>Erase unreadable demo data</button>
+                <p class="love-bank-status" id="love-bank-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <div id="love-bank-dashboard" class="love-bank-dashboard" hidden>
+                <div class="love-bank-profile-bar">
+                    <label for="love-active-account">Demo profile</label>
+                    <select id="love-active-account" aria-label="Choose a local demo account"></select>
+                    <label for="love-display-currency">Display balance in</label>
+                    <select id="love-display-currency" aria-label="Choose simulated display currency"></select>
+                    <button class="button button-outline" id="love-clear-data" type="button">Erase demo data</button>
+                </div>
+
+                <div class="love-wallet">
+                    <div>
+                        <p class="eyebrow">Fictional wallet · no cash value</p>
+                        <h3><span id="love-active-username"></span>'s balance</h3>
+                        <p class="love-balance"><span id="love-balance">0</span> <span id="love-balance-currency">USD</span></p>
+                        <p class="love-credit-balance" id="love-credit-balance">0 Love Credits · fictional base balance</p>
+                        <p class="love-rate-caption">Converted using today's fixed simulated rate card—not a real or live exchange rate.</p>
+                        <p class="love-account-number">Demo account number: <strong id="love-account-number"></strong></p>
+                    </div>
+                    <div class="love-meter" aria-label="Daily learning rewards">
+                        <span class="love-meter-label">Today's learning</span>
+                        <strong id="love-activity-count">0 of 2 activities</strong>
+                        <progress id="love-activity-progress" max="2" value="0">0 of 2</progress>
+                    </div>
+                </div>
+
+                <div class="love-bank-grid">
+                    <section class="love-panel" aria-labelledby="love-activities-title">
+                        <p class="eyebrow">Earn fictional credits</p>
+                        <h3 id="love-activities-title">Today's activities</h3>
+                        <p>Complete each activity once per day for 10 demo credits. Rewards are not money.</p>
+                        <div class="love-activity-list">
+                            <button class="love-activity" type="button" data-love-activity="lesson" data-reward="10">
+                                <span>Complete today's United World lesson</span>
+                                <strong>+10 credits</strong>
+                            </button>
+                            <button class="love-activity" type="button" data-love-activity="idea" data-reward="10">
+                                <span>Write one inspiring idea in your own words</span>
+                                <strong>+10 credits</strong>
+                            </button>
+                        </div>
+                        <p class="love-bank-status" id="love-activity-status" role="status" aria-live="polite"></p>
+                    </section>
+
+                    <section class="love-panel" aria-labelledby="love-interest-title">
+                        <p class="eyebrow">Illustration only · not payable interest</p>
+                        <h3 id="love-interest-title">Growth calculator</h3>
+                        <p>See how a hypothetical annual rate would affect fictional credits. Nothing is added to your wallet. The estimate uses your selected display currency.</p>
+                        <label for="love-interest-years">Illustrative years</label>
+                        <input id="love-interest-years" type="number" min="1" max="50" value="5">
+                        <div class="love-interest-result" aria-live="polite">
+                            <span>Example at 2% per year · display-currency estimate</span>
+                            <strong id="love-interest-projection">0 Love Credits</strong>
+                        </div>
+                        <p class="love-bank-footnote">This compound-interest example is educational arithmetic only. The rate is fictional and no return is promised.</p>
+                    </section>
+
+                    <section class="love-panel love-transfer-panel" aria-labelledby="love-transfer-title">
+                        <p class="eyebrow">Local demo profiles only</p>
+                        <h3 id="love-transfer-title">Send Love Credits</h3>
+                        <form id="love-transfer-form">
+                            <label for="love-recipient">Another demo account</label>
+                            <select id="love-recipient" required></select>
+                            <label for="love-transfer-amount">Amount (whole demo credits)</label>
+                            <input id="love-transfer-amount" type="number" min="1" step="1" required>
+                            <button class="button button-primary" type="submit">Send demo credits</button>
+                        </form>
+                        <p class="love-bank-status" id="love-transfer-status" role="status" aria-live="polite"></p>
+                        <p class="love-bank-footnote">
+                            This is a private educational simulation. Transfers outside the United World network or to legitimate external banks are strictly impossible.
+                        </p>
+                    </section>
+                </div>
+
+                <section class="love-panel love-ledger-panel" aria-labelledby="love-ledger-title">
+                    <p class="eyebrow">Stored on this device only</p>
+                    <h3 id="love-ledger-title">Demo activity history</h3>
+                    <ol id="love-ledger" class="love-ledger"></ol>
+                </section>
+
+                <section class="love-panel love-rates-panel" aria-labelledby="love-rates-title">
+                    <p class="eyebrow">Fixed example values · not market data</p>
+                    <h3 id="love-rates-title">Daily simulated exchange-rate chart</h3>
+                    <p>
+                        Demo display date: <time id="love-rate-date"></time>. These illustrative
+                        values are hard-coded in the site's JavaScript and do not update
+                        daily or track financial markets. Never use them for payments or
+                        financial decisions.
+                    </p>
+                    <div class="love-rates-table-wrap">
+                        <table class="love-rates-table">
+                            <caption>Illustrative simulated value for one Love Credit</caption>
+                            <thead>
+                                <tr><th scope="col">Currency</th><th scope="col">Simulated value</th></tr>
+                            </thead>
+                            <tbody id="love-rate-chart"></tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </section></main><footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">U</span><span>United <span class="brand-accent">World</span></span></a><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="signup.html">Sign In / Sign Up</a><a href="privacy.html">Privacy</a><a href="privacy.html">Ads</a></nav><p class="copyright">&copy; <span id="current-year"></span> United World</p></footer></body></html>

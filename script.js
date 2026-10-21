@@ -838,9 +838,15 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             const payload = await communityRequest("/api/community/me");
             const user = payload.user;
-            accountForms.hidden = Boolean(user);
-            logoutButton.hidden = !user;
-            creativePostForm.hidden = !user;
+            if (accountForms) {
+                accountForms.hidden = Boolean(user);
+            }
+            if (logoutButton) {
+                logoutButton.hidden = !user;
+            }
+            if (creativePostForm) {
+                creativePostForm.hidden = !user;
+            }
             accountStatus.textContent = user
                 ? "Signed in as " + user.displayName + ". Creator trust score: " + user.trustScore + "/100. New creators' posts are reviewed."
                 : "Sign in to submit creative work or report a post. Posts are plain text and require review.";
@@ -872,6 +878,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (creativeGrid) {
         loadCreativePosts();
+    }
+    if (accountStatus) {
         loadCurrentUser();
     }
 

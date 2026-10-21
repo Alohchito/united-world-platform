@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Create and share original community work."><meta name="theme-color" content="#24352d"><title>Artist Innate Godhand Work ? United World</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html" aria-label="United World home"><span class="brand-mark" aria-hidden="true">U</span><span>United <span class="brand-accent">World</span></span></a><nav class="main-navigation" aria-label="Main navigation"><ul class="nav-list">
+<li><a href="index.html">Home</a></li>
+<li class="nav-group"><a href="metaphysical.html">Wisdom &amp; Traditions</a><ul class="nav-dropdown"><li><a href="metaphysical.html">Metaphysical &amp; Theological Sciences</a></li><li><a href="philosophical.html">Philosophical Foundations</a></li></ul></li>
+<li class="nav-group"><a href="engineering.html">Governed Technology</a><ul class="nav-dropdown"><li><a href="artist.html">Artist Innate Godhand Work</a></li><li><a href="engineering.html">Engineering Video Engine</a></li><li><a href="translation.html">Universal Translation</a></li></ul></li>
+<li class="nav-group"><a href="signup.html">Love Bank Account</a><ul class="nav-dropdown"><li><a href="signup.html">Sign In / Sign Up</a></li><li><a href="rewards.html">User Rewards &amp; Activity Dashboard</a></li><li><a href="impact-fund.html">2% Eternal Impact Fund Widget</a></li><li><a href="love-bank.html">Love Bank Demo</a></li></ul></li>
+<li><a href="news.html">News Hub</a></li><li><a href="work-jobs.html">Work &amp; Jobs</a></li><li><a href="privacy.html">Privacy &amp; Ads</a></li></ul></nav></header><main id="main"><p class="page-home-action"><a class="button button-primary" href="index.html">Return Home</a></p><section class="creative-section" id="creative" aria-labelledby="creative-section-title">
+            <div class="section-heading">
+                <p class="eyebrow">Creative work, separate from news</p>
+                <h2 id="creative-section-title">A space to make and share</h2>
+                <p>
+                    Publish original art, fiction, code, music writing, or life advice.
+                    Posts are plain text, restricted to creative categories, and may be
+                    held for review. New creators start with low trust and posts are
+                    reviewed before publication.
+                </p>
+            </div>
+
+            <aside class="terms-banner" aria-label="Terms and safety notice">
+                <strong>Community terms:</strong>
+                This platform is an open creative space. User-published content reflects
+                the views of the author only. The platform maintains a strict zero-tolerance
+                policy against illegal content and will cooperate fully with international law enforcement.
+                <p>
+                    Reports and automated checks help identify concerns but cannot guarantee
+                    that all unlawful, harmful, or infringing content will be detected.
+                    This notice is not legal advice or a promise of immunity.
+                </p>
+            </aside>
+
+            <section class="account-panel" aria-labelledby="account-title">
+                <h3 id="account-title">Creator account</h3>
+                <p id="account-status" class="community-status" role="status" aria-live="polite">Checking account…</p>
+                <div id="account-forms" class="account-grid">
+                    <form id="register-form" class="community-form">
+                        <h4>Create an account</h4>
+                        <label for="register-name">Display name</label>
+                        <input id="register-name" name="displayName" maxlength="60" autocomplete="nickname" required>
+                        <label for="register-email">Email</label>
+                        <input id="register-email" name="email" type="email" maxlength="254" autocomplete="email" required>
+                        <label for="register-password">Password (at least 12 characters)</label>
+                        <input id="register-password" name="password" type="password" minlength="12" maxlength="200" autocomplete="new-password" required>
+                        <button class="button button-primary" type="submit">Create account</button>
+                    </form>
+                    <form id="login-form" class="community-form">
+                        <h4>Sign in</h4>
+                        <label for="login-email">Email</label>
+                        <input id="login-email" name="email" type="email" maxlength="254" autocomplete="email" required>
+                        <label for="login-password">Password</label>
+                        <input id="login-password" name="password" type="password" maxlength="200" autocomplete="current-password" required>
+                        <button class="button button-outline" type="submit">Sign in</button>
+                    </form>
+                </div>
+                <button class="button button-outline" id="logout-button" type="button" hidden>Sign out</button>
+            </section>
+
+            <form id="creative-post-form" class="community-form creative-post-form" hidden>
+                <h3>Share a creative post</h3>
+                <label for="creative-category">Creative category</label>
+                <select id="creative-category" name="category" required>
+                    <option>Art</option>
+                    <option>Fiction</option>
+                    <option>Code</option>
+                    <option>Music</option>
+                    <option>Life Advice</option>
+                </select>
+                <label for="creative-post-title">Title</label>
+                <input id="creative-post-title" name="title" maxlength="160" required>
+                <label for="creative-body">Your post (plain text only)</label>
+                <textarea id="creative-body" name="body" rows="7" maxlength="10000" required></textarea>
+                <label class="certification-label" for="copyright-certification">
+                    <input id="copyright-certification" name="copyrightCertified" type="checkbox" required>
+                    I certify that I own this content or have the legal right to share it, and it does not violate any international laws.
+                </label>
+                <p class="privacy-note">Do not post private information, unlawful material, or work you do not have rights to share. This checkbox is a user attestation, not legal verification.</p>
+                <button class="button button-primary" type="submit">Submit for publication</button>
+            </form>
+
+            <p class="community-status" id="creative-status" role="status" aria-live="polite"></p>
+            <div class="creative-grid" id="creative-grid" aria-live="polite"></div>
+
+            <details class="moderator-panel">
+                <summary>Moderator review</summary>
+                <form id="moderator-auth-form" class="moderator-auth-form">
+                    <label for="moderator-token">Administrator bearer token</label>
+                    <input id="moderator-token" type="password" autocomplete="off" required>
+                    <button class="button button-outline" type="submit">Load posts awaiting review</button>
+                </form>
+                <p class="community-status" id="moderator-status" role="status" aria-live="polite"></p>
+                <div id="moderator-queue" class="moderator-queue"></div>
+            </details>
+        </section></main><footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">U</span><span>United <span class="brand-accent">World</span></span></a><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="signup.html">Sign In / Sign Up</a><a href="privacy.html">Privacy</a><a href="privacy.html">Ads</a></nav><p class="copyright">&copy; <span id="current-year"></span> United World</p></footer></body></html>

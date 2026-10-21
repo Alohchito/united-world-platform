@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A community chat interface blueprint with clear moderation and rights-review integration points.">
+    <meta name="theme-color" content="#24352d">
+    <title>Community Chat | United World</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="community-experience.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="United World home"><span class="brand-mark" aria-hidden="true">U</span><span>United <span class="brand-accent">World</span></span></a>
+        <nav class="main-navigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-group"><a href="aetherium.html">The Aetherium</a><ul class="nav-dropdown">
+                    <li><a href="chat-software.html">Community Chat</a></li>
+                    <li class="nav-group"><a href="christ-mindset.html">CHRIST Mindset for Science &amp; Technology</a><ul class="nav-dropdown"><li><a href="sow-natural.html">Justified Earth-Universal Science-Knowledge Universe-Creator Sow-Naturaly</a></li></ul></li>
+                    <li><a href="enoch-hall.html">ENOCH Guidance Hall</a></li>
+                </ul></li>
+                <li class="nav-group"><a href="metaphysical.html">Wisdom &amp; Traditions</a><ul class="nav-dropdown"><li><a href="metaphysical.html">Metaphysical &amp; Theological Sciences</a></li><li><a href="philosophical.html">Philosophical Foundations</a></li></ul></li>
+                <li class="nav-group"><a href="engineering.html">Governed Technology</a><ul class="nav-dropdown"><li><a href="artist.html">Artist Innate Godhand Work</a></li><li><a href="engineering.html">Engineering Video Engine</a></li><li><a href="translation.html">Universal Translation</a></li></ul></li>
+                <li class="nav-group"><a href="signup.html">Love Bank Account</a><ul class="nav-dropdown"><li><a href="signup.html">Sign In / Sign Up</a></li><li><a href="rewards.html">User Rewards &amp; Activity Dashboard</a></li><li><a href="impact-fund.html">2% Eternal Impact Fund Widget</a></li><li><a href="love-bank.html">Love Bank Demo</a></li></ul></li>
+                <li><a href="news.html">News Hub</a></li><li><a href="work-jobs.html">Work &amp; Jobs</a></li><li><a href="privacy.html">Privacy &amp; Ads</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <p class="page-home-action"><a class="button button-primary" href="index.html">Return Home</a></p>
+        <section class="page-hero" aria-labelledby="chat-title">
+            <p class="eyebrow">Aetherium community space</p>
+            <h1 id="chat-title">Community Chat</h1>
+            <p>A place for conversation and posts, designed around respectful participation, moderation, and care for the rights and safety of others.</p>
+        </section>
+        <section class="page-section" aria-labelledby="chat-compose-title">
+            <h2 id="chat-compose-title">Write a post</h2>
+            <p class="page-note">Prototype only: chat is not connected to a publishing service. Submitted text is not sent or published. A production service must implement applicable-law and terms review, copyright reporting, abuse response, privacy controls, and human escalation. No automated filter can guarantee compliance with every jurisdiction or detect every issue.</p>
+            <form id="chat-form" class="community-form">
+                <label for="chat-message">Message</label>
+                <textarea id="chat-message" name="message" rows="5" maxlength="5000" required></textarea>
+                <label class="certification-label" for="chat-rights-confirm">
+                    <input id="chat-rights-confirm" name="rightsConfirmed" type="checkbox" required>
+                    I will respect other people's safety, applicable rules, and content rights.
+                </label>
+                <button class="button button-primary" type="submit">Submit for moderation</button>
+            </form>
+            <p id="chat-status" class="community-status" role="status" aria-live="polite">Moderation and publishing services are not configured.</p>
+        </section>
+        <section class="page-section" aria-labelledby="chat-policy-title">
+            <h2 id="chat-policy-title">Moderation workflow blueprint</h2>
+            <ol>
+                <li>Validate and rate-limit submissions on the server; keep untrusted content as text.</li>
+                <li>Apply documented safety, terms-of-service, and copyright review with human escalation and an appeal process.</li>
+                <li>Hold uncertain or reported posts from public display until review is complete.</li>
+                <li>Provide reporting, privacy controls, and a transparent response process.</li>
+            </ol>
+            <p class="privacy-note">These are product requirements, not a statement that this prototype provides legal compliance or legal advice. Rules and obligations vary by location and context.</p>
+        </section>
+    </main>
+    <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">U</span><span>United <span class="brand-accent">World</span></span></a><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="aetherium.html">The Aetherium</a><a href="privacy.html">Privacy</a></nav><p class="copyright">&copy; <span id="current-year"></span> United World</p></footer>
+</body>
+</html>
